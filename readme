@@ -1,0 +1,15 @@
+Change directory into the dockerfiles/pytorch_jmt/ and you will find 
+a Dockerfile.  Build this image:
+
+$  sudo docker build -t "pytorch_jmt" .
+
+If you now:
+
+$  docker image ls
+
+You should see your image built.  Now you can make an instance of it:
+
+$  docker run -it --rm -v $PWD:/cwd/ -p 8888:8888 pytorch_jmt
+
+Obviously, make sure the current directory containes the source code
+(*.ipynb) files so the the docker container can see it in /cwd/.
