@@ -11,5 +11,5 @@ You should see your image built.  Now you can make an instance of it:
 
 $  docker run -it --rm -v $PWD:/cwd/ -p 8888:8888 pytorch_jmt
 
-Obviously, make sure the current directory containes the source code
+Obviously, make sure the current directory contains the source code
 (*.ipynb) files so the the docker container can see it in /cwd/.
